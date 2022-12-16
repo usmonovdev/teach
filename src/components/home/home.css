@@ -1,0 +1,36 @@
+section {
+    background: url('../img/home.jpg');
+    background-size: cover;
+    min-height: 90vh;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section h1 {
+    font-weight: bold;
+    color: var(--white);
+    font-size: calc(1.2rem + 1.5vw);
+}
+
+section span {
+    color: var(--blue);
+    font-size: calc(1.4rem + 1.5vw);
+}
+
+section h3 {
+    font-size: calc(1.3rem + .6vw);
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+section h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--white);
+}

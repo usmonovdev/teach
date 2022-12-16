@@ -1,0 +1,146 @@
+.infoComp {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.infoComp .infoBox {
+    width: 100%;
+    margin: 0 100px 0 100px;
+    padding: 0 12px 0 12px;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .infoComp .infoBox {
+        margin: 0 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .infoComp .infoBox {
+        margin: 0;
+    }
+}
+
+.infoBox .infoTitle {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.infoTitle h1::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: 4.875rem;
+    top: 3.85rem;
+    width: 8.75rem;
+    height: .25rem;
+    background: var(--blue);
+    transform: translateX(-50%);
+}
+
+.infoTitle h1::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 5rem;
+    top: .2rem;
+    width: 0.938rem;
+    height: 0.938rem;
+    border-radius: 50%;
+    background: var(--blue);
+    transform: translateX(-50%);
+}
+
+.infoAdd {
+    width: 100%;
+    margin-top: 30px;
+    background-color: var(--white);
+}
+
+.infoAdd h1{
+    text-align: center;
+    font-size: calc(1.3rem + .6vw);
+    font-weight: 300;
+}
+
+.infoBox .infoCard {
+    width: 70%;
+    margin: 40px 20px 0 20px;
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: .25rem;
+    word-wrap: break-word;
+}
+
+.infoCard img {
+    width: 100%;
+}
+
+.infoCard h1 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 500px) {
+    .infoBox .infoCard {
+        width: 80%;
+    }
+}
+
+.infoCard a {
+    color: var(--blue);
+}
+
+.infoCard .infoLink {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.infoDiscount {
+    width: 100%;
+    margin-top: 40px;
+    background-color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoDiscount .discountTitle {
+    color: var(--green);
+    font-weight: 300;
+    font-size: calc(1.3rem + .6vw);
+}
+
+.infoDiscount .discountAbout {
+    font-weight: 300;
+    font-size: calc(1.3rem + .6vw);
+}
+
+.infoDiscount .linkBtn {
+    width: 110px;
+    padding: 15px;
+    margin: 15px;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--blue);
+}

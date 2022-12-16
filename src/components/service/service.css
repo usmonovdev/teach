@@ -1,0 +1,175 @@
+.service {
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+
+.serviceTitle {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+}
+
+.serviceTitle h1::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: 4.875rem;
+    top: 3.85rem;
+    width: 8.75rem;
+    height: .25rem;
+    background: var(--blue);
+    transform: translateX(-50%);
+}
+
+.serviceTitle h1::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 5rem;
+    top: .2rem;
+    width: 0.938rem;
+    height: 0.938rem;
+    border-radius: 50%;
+    background: var(--blue);
+    transform: translateX(-50%);
+}
+
+.service .serviceBox {
+    margin: 0 100px 0 100px;
+    padding: 0 12px 0 12px;
+    background-color: var(--gray);
+}
+
+@media screen and (max-width: 768px) {
+    .service .serviceBox {
+        margin: 0 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .service .serviceBox {
+        margin: 0;
+    }
+}
+
+.serviceBox .titleInfo {
+    margin-top: 50px;
+    background-color: var(--white);
+}
+
+.titleInfo h1 {
+    padding: .5rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.75rem;
+}
+
+.serviceBox .cards {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+    .serviceBox .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cards .card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    width: 18rem;
+    margin: 20px;
+    border-radius: .25rem;
+}
+
+.card img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    width: 100%;
+}
+
+.card .cardBody {
+    padding: 16px;
+}
+
+.cardBody h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+}
+
+.cardBody p {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.cardBody button {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.cardBody button:hover {
+    background-color: var(--blueHover);
+}
+
+.serviceBox .discount {
+    padding: 8px;
+    background-color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discount .discountTitle {
+    color: var(--green);
+    font-weight: 300;
+    font-size: calc(1.3rem + .6vw);
+}
+
+.discount .discountAbout {
+    font-weight: 300;
+    font-size: calc(1.3rem + .6vw);
+}
+
+.discount .linkBtn {
+    width: 110px;
+    padding: 15px;
+    margin: 15px;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--blue);
+}
+
+.service .video {
+    width: 100%;
+    height: 200px;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video .playIcon {
+    color: var(--white);
+    font-size: 2rem;
+}
